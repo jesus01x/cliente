@@ -76,10 +76,10 @@ public final class Login extends javax.swing.JFrame {
                     //Se van agregando los bytes con el formato especificado en el objeto StringBuilder  
                     sb.append(String.format("%02X%s", mac[j], (j < mac.length - 1) ? "-" : ""));
                 }
-                JOptionPane.showMessageDialog(null, sb.toString());
+//                JOptionPane.showMessageDialog(null, sb.toString());
             } else {
                 //Si es nula crea una Exception de tipo NoNetworkException
-                throw new NoNetworkException("No hay direccion MAC en el dispositivo");
+                throw new NoNetworkException("No hay direccion MAC en el dispositivo (Dispositivo de Red Desconectado)");
             }
             //Se convierte esa informacion a cadena para que finalmente se le pase esa informacion al JLabel
             //lblMAC_ADDRESS.setText(Dirmac);
@@ -349,7 +349,7 @@ public final class Login extends javax.swing.JFrame {
             pst.setString(1, IP);
             pst.setString(2, MAC);
             pst.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Direccion IP actualizada");
+//            JOptionPane.showMessageDialog(null, "Direccion IP actualizada");
             conn.close();
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e.getMessage());

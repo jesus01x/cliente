@@ -218,7 +218,7 @@ public class Info_Computo extends javax.swing.JFrame {
             Statement pst2 = conn.createStatement();
             ResultSet rs = pst2.executeQuery(consultar);
 //        Object datos[]=new Object[2];        
-            JOptionPane.showMessageDialog(null, "id del mensaje: " + idMensaje_del_dia);
+//            JOptionPane.showMessageDialog(null, "id del mensaje: " + idMensaje_del_dia);
             if (rs.next()) {
                 do {
                     msn_diario[0] = rs.getInt("id_mensaje_diario_leido");

@@ -327,7 +327,7 @@ public class Configuracion extends javax.swing.JFrame {
         // TODO add your handling code here:
         dispose();
         Alumno.Aula = jcbAula.getSelectedItem().toString();
-        Alumno.Materia = "Prueba";
+        Alumno.Materia = "";
         Info_Computo a1 = new Info_Computo();
         a1.setVisible(true);
     }//GEN-LAST:event_btnEntrarActionPerformed
