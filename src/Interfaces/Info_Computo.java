@@ -131,7 +131,7 @@ public class Info_Computo extends javax.swing.JFrame {
 
         if (infoMac[0] != null) {
             lblMAC_ADDRESS.setText(infoMac[0].toString());
-            lblUbicacion.setText(infoMac[1].toString());
+            lblUbicacion.setText(infoMac[1].toString()); 
             lblFecha.setText(fecha_Actual);
         } else {
             JOptionPane.showMessageDialog(null, "infoMac es null");
